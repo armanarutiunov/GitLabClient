@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GLAuthorizationViewController" customModule="GitLabClient" customModuleProvider="target">
+            <connections>
+                <outlet property="headerView" destination="LcD-uW-AnS" id="Qmn-r7-P0O"/>
+                <outlet property="passwordTextField" destination="ZCF-gw-v1P" id="CIn-DG-Y51"/>
+                <outlet property="signInButton" destination="AZ1-zB-gd5" id="Nkb-nN-rBN"/>
+                <outlet property="usernameTextField" destination="OC9-c5-WeY" id="F3m-dz-RPs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LcD-uW-AnS">
+                    <rect key="frame" x="-1" y="-1" width="322" height="81"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gitlab_icon" translatesAutoresizingMaskIntoConstraints="NO" id="M79-Ov-mYc">
+                            <rect key="frame" x="141" y="31" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="M79-Ov-mYc" secondAttribute="height" multiplier="1:1" id="Y7d-OX-gSh"/>
+                                <constraint firstAttribute="height" constant="40" id="fmE-MD-vba"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="M79-Ov-mYc" firstAttribute="centerX" secondItem="LcD-uW-AnS" secondAttribute="centerX" id="1wR-1k-bXO"/>
+                        <constraint firstAttribute="bottom" secondItem="M79-Ov-mYc" secondAttribute="bottom" constant="10" id="8zU-TG-Zb3"/>
+                        <constraint firstAttribute="height" constant="81" id="xJh-fE-ZUf"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Sr-aw-zxI">
+                    <rect key="frame" x="40" y="156" width="79" height="30"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username or email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deP-Ky-pcU">
+                    <rect key="frame" x="40" y="206.5" width="129" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OC9-c5-WeY">
+                    <rect key="frame" x="40" y="233" width="240" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qx6-HD-k24">
+                    <rect key="frame" x="40" y="283" width="66" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZCF-gw-v1P">
+                    <rect key="frame" x="40" y="310" width="240" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZ1-zB-gd5">
+                    <rect key="frame" x="40" y="364" width="240" height="35"/>
+                    <color key="backgroundColor" red="0.086274509803921567" green="0.5607843137254902" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="aSS-DN-MxL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <state key="normal" title="Sign in">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="signInButtonPressed:" destination="-1" eventType="touchUpInside" id="gLw-ty-q5m"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="deP-Ky-pcU" firstAttribute="leading" secondItem="0Sr-aw-zxI" secondAttribute="leading" id="3BX-Kp-BEd"/>
+                <constraint firstItem="qx6-HD-k24" firstAttribute="top" secondItem="OC9-c5-WeY" secondAttribute="bottom" constant="20" id="3ib-gr-6HS"/>
+                <constraint firstItem="0Sr-aw-zxI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="0.25" id="7Ru-Ka-idX"/>
+                <constraint firstItem="LcD-uW-AnS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-1" id="9ht-Nd-4bt"/>
+                <constraint firstItem="ZCF-gw-v1P" firstAttribute="leading" secondItem="qx6-HD-k24" secondAttribute="leading" id="AVS-sd-yGK"/>
+                <constraint firstItem="ZCF-gw-v1P" firstAttribute="top" secondItem="qx6-HD-k24" secondAttribute="bottom" constant="8.5" id="EUD-40-YLe"/>
+                <constraint firstItem="AZ1-zB-gd5" firstAttribute="centerX" secondItem="ZCF-gw-v1P" secondAttribute="centerX" id="Edz-6E-kTr"/>
+                <constraint firstItem="OC9-c5-WeY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Gqb-lw-Fli"/>
+                <constraint firstItem="qx6-HD-k24" firstAttribute="leading" secondItem="OC9-c5-WeY" secondAttribute="leading" id="HUg-UD-z19"/>
+                <constraint firstItem="ZCF-gw-v1P" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IH6-iI-zk0"/>
+                <constraint firstItem="AZ1-zB-gd5" firstAttribute="leading" secondItem="ZCF-gw-v1P" secondAttribute="leading" id="JE4-ul-3u5"/>
+                <constraint firstItem="deP-Ky-pcU" firstAttribute="top" secondItem="0Sr-aw-zxI" secondAttribute="bottom" constant="20" id="b5X-Qm-LG0"/>
+                <constraint firstItem="0Sr-aw-zxI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.55" id="fsW-BB-nI3"/>
+                <constraint firstItem="OC9-c5-WeY" firstAttribute="top" secondItem="deP-Ky-pcU" secondAttribute="bottom" constant="8.5" id="jGq-n2-1y7"/>
+                <constraint firstItem="AZ1-zB-gd5" firstAttribute="top" secondItem="ZCF-gw-v1P" secondAttribute="bottom" constant="24" id="kuF-vu-yrE"/>
+                <constraint firstItem="OC9-c5-WeY" firstAttribute="leading" secondItem="deP-Ky-pcU" secondAttribute="leading" id="lSs-l4-giM"/>
+                <constraint firstAttribute="trailing" secondItem="LcD-uW-AnS" secondAttribute="trailing" constant="-1" id="no6-tC-fUf"/>
+                <constraint firstItem="LcD-uW-AnS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-1" id="tSk-CP-UVp"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="gitlab_icon" width="100" height="100"/>
+    </resources>
+</document>

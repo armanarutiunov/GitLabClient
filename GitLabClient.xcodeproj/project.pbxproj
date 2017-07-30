@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0134ACD81F2CAD720025112A /* GLAuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134ACD71F2CAD720025112A /* GLAuthorizationViewModel.swift */; };
+		0134ACDE1F2D105B0025112A /* GLGitLabAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134ACDD1F2D105B0025112A /* GLGitLabAccount.swift */; };
+		0134ACE31F2E00550025112A /* GLProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134ACE11F2E00550025112A /* GLProjectsViewController.swift */; };
+		0134ACE41F2E00550025112A /* GLProjectsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0134ACE21F2E00550025112A /* GLProjectsViewController.xib */; };
+		0134ACE71F2E00F30025112A /* GLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134ACE61F2E00F30025112A /* GLViewController.swift */; };
 		0147B56C1F290ED200B5BFDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0147B56B1F290ED200B5BFDF /* AppDelegate.swift */; };
-		0147B56E1F290ED200B5BFDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0147B56D1F290ED200B5BFDF /* ViewController.swift */; };
-		0147B5711F290ED200B5BFDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0147B56F1F290ED200B5BFDF /* Main.storyboard */; };
 		0147B5731F290ED200B5BFDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0147B5721F290ED200B5BFDF /* Assets.xcassets */; };
 		0147B5761F290ED200B5BFDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0147B5741F290ED200B5BFDF /* LaunchScreen.storyboard */; };
 		0147B5811F290ED200B5BFDF /* GitLabClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0147B5801F290ED200B5BFDF /* GitLabClientTests.swift */; };
+		0147B58D1F29121E00B5BFDF /* GLAuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0147B58B1F29121E00B5BFDF /* GLAuthorizationViewController.swift */; };
+		0147B58E1F29121E00B5BFDF /* GLAuthorizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0147B58C1F29121E00B5BFDF /* GLAuthorizationViewController.xib */; };
+		01A8374D1F2E58310065B0B2 /* GLProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8374C1F2E58310065B0B2 /* GLProjectsViewModel.swift */; };
+		01A8374F1F2E59D40065B0B2 /* GLActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8374E1F2E59D40065B0B2 /* GLActivityIndicator.swift */; };
+		01A837521F2E5EDC0065B0B2 /* GLAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A837511F2E5EDC0065B0B2 /* GLAPIManager.swift */; };
+		3522AC29EB00F5BA2A63BF8A /* Pods_GitLabClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA101D31777A88D6FE2A8B1 /* Pods_GitLabClient.framework */; };
+		B897666ECCFF6D33F1C9C3E0 /* Pods_GitLabClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36DE110B3EE66C0FB9C39CCB /* Pods_GitLabClientTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +36,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0134ACD71F2CAD720025112A /* GLAuthorizationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLAuthorizationViewModel.swift; sourceTree = "<group>"; };
+		0134ACDD1F2D105B0025112A /* GLGitLabAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLGitLabAccount.swift; sourceTree = "<group>"; };
+		0134ACE11F2E00550025112A /* GLProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLProjectsViewController.swift; sourceTree = "<group>"; };
+		0134ACE21F2E00550025112A /* GLProjectsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLProjectsViewController.xib; sourceTree = "<group>"; };
+		0134ACE61F2E00F30025112A /* GLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLViewController.swift; sourceTree = "<group>"; };
 		0147B5681F290ED200B5BFDF /* GitLabClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitLabClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0147B56B1F290ED200B5BFDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0147B56D1F290ED200B5BFDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0147B5701F290ED200B5BFDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0147B5721F290ED200B5BFDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0147B5751F290ED200B5BFDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0147B5771F290ED200B5BFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0147B57C1F290ED200B5BFDF /* GitLabClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitLabClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0147B5801F290ED200B5BFDF /* GitLabClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitLabClientTests.swift; sourceTree = "<group>"; };
 		0147B5821F290ED200B5BFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0147B58B1F29121E00B5BFDF /* GLAuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLAuthorizationViewController.swift; sourceTree = "<group>"; };
+		0147B58C1F29121E00B5BFDF /* GLAuthorizationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLAuthorizationViewController.xib; sourceTree = "<group>"; };
+		01A8374C1F2E58310065B0B2 /* GLProjectsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLProjectsViewModel.swift; sourceTree = "<group>"; };
+		01A8374E1F2E59D40065B0B2 /* GLActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLActivityIndicator.swift; sourceTree = "<group>"; };
+		01A837511F2E5EDC0065B0B2 /* GLAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLAPIManager.swift; sourceTree = "<group>"; };
+		36DE110B3EE66C0FB9C39CCB /* Pods_GitLabClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitLabClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF895D0A83413668ACF2799 /* Pods-GitLabClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitLabClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitLabClientTests/Pods-GitLabClientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		439946DED5626F048510DBC0 /* Pods-GitLabClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitLabClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitLabClientTests/Pods-GitLabClientTests.release.xcconfig"; sourceTree = "<group>"; };
+		ADC25BDA9B6FA49297F7758B /* Pods-GitLabClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitLabClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitLabClient/Pods-GitLabClient.debug.xcconfig"; sourceTree = "<group>"; };
+		CA572D78A5D4577496D5DD5E /* Pods-GitLabClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitLabClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitLabClient/Pods-GitLabClient.release.xcconfig"; sourceTree = "<group>"; };
+		ECA101D31777A88D6FE2A8B1 /* Pods_GitLabClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitLabClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3522AC29EB00F5BA2A63BF8A /* Pods_GitLabClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +75,85 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B897666ECCFF6D33F1C9C3E0 /* Pods_GitLabClientTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0134ACD91F2CF29B0025112A /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				0147B58B1F29121E00B5BFDF /* GLAuthorizationViewController.swift */,
+				0134ACD71F2CAD720025112A /* GLAuthorizationViewModel.swift */,
+				0147B58C1F29121E00B5BFDF /* GLAuthorizationViewController.xib */,
+			);
+			name = Authorization;
+			sourceTree = "<group>";
+		};
+		0134ACDA1F2CF2B00025112A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0134ACD91F2CF29B0025112A /* Authorization */,
+				0134ACE01F2E003D0025112A /* Projects */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		0134ACDB1F2CF2D10025112A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0147B5721F290ED200B5BFDF /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0134ACDC1F2CF2F60025112A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0147B56B1F290ED200B5BFDF /* AppDelegate.swift */,
+				0147B5741F290ED200B5BFDF /* LaunchScreen.storyboard */,
+				0147B5771F290ED200B5BFDF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0134ACDF1F2D19640025112A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0134ACDD1F2D105B0025112A /* GLGitLabAccount.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0134ACE01F2E003D0025112A /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				0134ACE11F2E00550025112A /* GLProjectsViewController.swift */,
+				01A8374C1F2E58310065B0B2 /* GLProjectsViewModel.swift */,
+				0134ACE21F2E00550025112A /* GLProjectsViewController.xib */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		0134ACE51F2E00B70025112A /* UI Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0134ACE61F2E00F30025112A /* GLViewController.swift */,
+				01A8374E1F2E59D40065B0B2 /* GLActivityIndicator.swift */,
+			);
+			name = "UI Extensions";
+			sourceTree = "<group>";
+		};
 		0147B55F1F290ED200B5BFDF = {
 			isa = PBXGroup;
 			children = (
 				0147B56A1F290ED200B5BFDF /* GitLabClient */,
 				0147B57F1F290ED200B5BFDF /* GitLabClientTests */,
 				0147B5691F290ED200B5BFDF /* Products */,
+				9D56459C62B6450A5630B577 /* Pods */,
+				2229E9ACA8A7C4B44DA9D90E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +169,12 @@
 		0147B56A1F290ED200B5BFDF /* GitLabClient */ = {
 			isa = PBXGroup;
 			children = (
-				0147B56B1F290ED200B5BFDF /* AppDelegate.swift */,
-				0147B56D1F290ED200B5BFDF /* ViewController.swift */,
-				0147B56F1F290ED200B5BFDF /* Main.storyboard */,
-				0147B5721F290ED200B5BFDF /* Assets.xcassets */,
-				0147B5741F290ED200B5BFDF /* LaunchScreen.storyboard */,
-				0147B5771F290ED200B5BFDF /* Info.plist */,
+				0134ACDB1F2CF2D10025112A /* Resources */,
+				0134ACE51F2E00B70025112A /* UI Extensions */,
+				0134ACDA1F2CF2B00025112A /* Screens */,
+				0134ACDF1F2D19640025112A /* Models */,
+				01A837501F2E5EAA0065B0B2 /* Managers */,
+				0134ACDC1F2CF2F60025112A /* Supporting Files */,
 			);
 			path = GitLabClient;
 			sourceTree = "<group>";
@@ -96,6 +188,34 @@
 			path = GitLabClientTests;
 			sourceTree = "<group>";
 		};
+		01A837501F2E5EAA0065B0B2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				01A837511F2E5EDC0065B0B2 /* GLAPIManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		2229E9ACA8A7C4B44DA9D90E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECA101D31777A88D6FE2A8B1 /* Pods_GitLabClient.framework */,
+				36DE110B3EE66C0FB9C39CCB /* Pods_GitLabClientTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D56459C62B6450A5630B577 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADC25BDA9B6FA49297F7758B /* Pods-GitLabClient.debug.xcconfig */,
+				CA572D78A5D4577496D5DD5E /* Pods-GitLabClient.release.xcconfig */,
+				3DF895D0A83413668ACF2799 /* Pods-GitLabClientTests.debug.xcconfig */,
+				439946DED5626F048510DBC0 /* Pods-GitLabClientTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0147B5851F290ED200B5BFDF /* Build configuration list for PBXNativeTarget "GitLabClient" */;
 			buildPhases = (
+				1BC18A8DB25C68604DB9294D /* [CP] Check Pods Manifest.lock */,
 				0147B5641F290ED200B5BFDF /* Sources */,
 				0147B5651F290ED200B5BFDF /* Frameworks */,
 				0147B5661F290ED200B5BFDF /* Resources */,
+				0D6EFDAC7772D87CDC6A7C49 /* [CP] Embed Pods Frameworks */,
+				CEA75A204299FCB85C4DFD82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +243,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0147B5881F290ED200B5BFDF /* Build configuration list for PBXNativeTarget "GitLabClientTests" */;
 			buildPhases = (
+				6974B34DA1F63A3B09978894 /* [CP] Check Pods Manifest.lock */,
 				0147B5781F290ED200B5BFDF /* Sources */,
 				0147B5791F290ED200B5BFDF /* Frameworks */,
 				0147B57A1F290ED200B5BFDF /* Resources */,
+				A9E9D09C276FC1F3AD19E8E5 /* [CP] Embed Pods Frameworks */,
+				A178427E8F0D1A0DD0D135CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,6 +266,7 @@
 		0147B5601F290ED200B5BFDF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = GL;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Arman Arutyunov";
@@ -182,8 +309,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0147B5761F290ED200B5BFDF /* LaunchScreen.storyboard in Resources */,
+				0134ACE41F2E00550025112A /* GLProjectsViewController.xib in Resources */,
 				0147B5731F290ED200B5BFDF /* Assets.xcassets in Resources */,
-				0147B5711F290ED200B5BFDF /* Main.storyboard in Resources */,
+				0147B58E1F29121E00B5BFDF /* GLAuthorizationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,13 +324,113 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D6EFDAC7772D87CDC6A7C49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitLabClient/Pods-GitLabClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BC18A8DB25C68604DB9294D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6974B34DA1F63A3B09978894 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A178427E8F0D1A0DD0D135CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitLabClientTests/Pods-GitLabClientTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9E9D09C276FC1F3AD19E8E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitLabClientTests/Pods-GitLabClientTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEA75A204299FCB85C4DFD82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitLabClient/Pods-GitLabClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0147B5641F290ED200B5BFDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0147B56E1F290ED200B5BFDF /* ViewController.swift in Sources */,
+				0134ACE31F2E00550025112A /* GLProjectsViewController.swift in Sources */,
+				01A8374F1F2E59D40065B0B2 /* GLActivityIndicator.swift in Sources */,
 				0147B56C1F290ED200B5BFDF /* AppDelegate.swift in Sources */,
+				0134ACD81F2CAD720025112A /* GLAuthorizationViewModel.swift in Sources */,
+				0134ACE71F2E00F30025112A /* GLViewController.swift in Sources */,
+				0147B58D1F29121E00B5BFDF /* GLAuthorizationViewController.swift in Sources */,
+				01A8374D1F2E58310065B0B2 /* GLProjectsViewModel.swift in Sources */,
+				01A837521F2E5EDC0065B0B2 /* GLAPIManager.swift in Sources */,
+				0134ACDE1F2D105B0025112A /* GLGitLabAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +453,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0147B56F1F290ED200B5BFDF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0147B5701F290ED200B5BFDF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0147B5741F290ED200B5BFDF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -339,6 +559,7 @@
 		};
 		0147B5861F290ED200B5BFDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADC25BDA9B6FA49297F7758B /* Pods-GitLabClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 42934LX6SX;
@@ -352,6 +573,7 @@
 		};
 		0147B5871F290ED200B5BFDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA572D78A5D4577496D5DD5E /* Pods-GitLabClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 42934LX6SX;
@@ -365,6 +587,7 @@
 		};
 		0147B5891F290ED200B5BFDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DF895D0A83413668ACF2799 /* Pods-GitLabClientTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -380,6 +603,7 @@
 		};
 		0147B58A1F290ED200B5BFDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 439946DED5626F048510DBC0 /* Pods-GitLabClientTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -412,6 +636,7 @@
 				0147B5871F290ED200B5BFDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0147B5881F290ED200B5BFDF /* Build configuration list for PBXNativeTarget "GitLabClientTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +645,7 @@
 				0147B58A1F290ED200B5BFDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
