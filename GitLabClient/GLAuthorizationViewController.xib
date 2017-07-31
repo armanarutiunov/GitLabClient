@@ -28,18 +28,39 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LcD-uW-AnS">
                     <rect key="frame" x="-1" y="-1" width="322" height="81"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gitlab_icon" translatesAutoresizingMaskIntoConstraints="NO" id="M79-Ov-mYc">
-                            <rect key="frame" x="141" y="31" width="40" height="40"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nc1-IB-iga">
+                            <rect key="frame" x="98.5" y="0.0" width="125" height="81"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gitlab_icon" translatesAutoresizingMaskIntoConstraints="NO" id="cZ0-OW-2Vh">
+                                    <rect key="frame" x="0.0" y="31" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="cZ0-OW-2Vh" secondAttribute="height" multiplier="1:1" id="HiP-3F-1Ql"/>
+                                        <constraint firstAttribute="height" constant="40" id="nDj-Bz-8Vl"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GitLab" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Deq-7C-tB4">
+                                    <rect key="frame" x="48" y="37.5" width="77" height="28"/>
+                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="25"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="M79-Ov-mYc" secondAttribute="height" multiplier="1:1" id="Y7d-OX-gSh"/>
-                                <constraint firstAttribute="height" constant="40" id="fmE-MD-vba"/>
+                                <constraint firstItem="Deq-7C-tB4" firstAttribute="centerY" secondItem="cZ0-OW-2Vh" secondAttribute="centerY" id="2GH-FI-ETv"/>
+                                <constraint firstItem="Deq-7C-tB4" firstAttribute="leading" secondItem="cZ0-OW-2Vh" secondAttribute="trailing" constant="8" id="TwE-dv-93d"/>
+                                <constraint firstAttribute="trailing" secondItem="Deq-7C-tB4" secondAttribute="trailing" id="Vy5-ME-u41"/>
+                                <constraint firstAttribute="width" constant="125" id="Xs9-7Y-eWI"/>
+                                <constraint firstItem="cZ0-OW-2Vh" firstAttribute="leading" secondItem="nc1-IB-iga" secondAttribute="leading" id="aFS-Es-gHz"/>
+                                <constraint firstAttribute="bottom" secondItem="cZ0-OW-2Vh" secondAttribute="bottom" constant="10" id="fi9-CJ-gK0"/>
                             </constraints>
-                        </imageView>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="M79-Ov-mYc" firstAttribute="centerX" secondItem="LcD-uW-AnS" secondAttribute="centerX" id="1wR-1k-bXO"/>
-                        <constraint firstAttribute="bottom" secondItem="M79-Ov-mYc" secondAttribute="bottom" constant="10" id="8zU-TG-Zb3"/>
+                        <constraint firstItem="nc1-IB-iga" firstAttribute="centerX" secondItem="LcD-uW-AnS" secondAttribute="centerX" id="BXa-o7-2ia"/>
+                        <constraint firstAttribute="bottom" secondItem="nc1-IB-iga" secondAttribute="bottom" id="XVy-3Q-wL5"/>
+                        <constraint firstItem="nc1-IB-iga" firstAttribute="top" secondItem="LcD-uW-AnS" secondAttribute="top" id="b2V-AY-miy"/>
                         <constraint firstAttribute="height" constant="81" id="xJh-fE-ZUf"/>
                     </constraints>
                 </view>

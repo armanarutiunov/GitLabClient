@@ -18,7 +18,6 @@ class GLGroupsViewModel {
 	
 	let groupName = "group_name"
 	let groupDescription = "group_description"
-	let groupAvatar = "groupAvatar"
 }
 
 extension GLGroupsViewModel {
@@ -54,20 +53,5 @@ extension GLGroupsViewModel {
 		}
 		
 		return url
-	}
-	
-	func getHeaderView(tableView: UITableView) -> UIView {
-		let headerView = UIView(frame: CGRect(x: 0,
-		                                      y: 0,
-		                                      width: tableView.frame.size.width,
-		                                      height: 60))
-		let label = UILabel(frame: CGRect(x: 16,
-		                                  y: 0,
-		                                  width: tableView.frame.size.width,
-		                                  height: 60))
-		
-		label.font = UIFont.boldSystemFont(ofSize: 30)
-		headerView.addSubview(label)
-		return headerView
 	}
 }

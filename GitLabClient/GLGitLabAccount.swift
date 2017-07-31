@@ -21,8 +21,6 @@ extension GitLabAccount {
 	
 	//ключи для избежания опечаток
 	struct Keys {
-		static let username = "username"
-		static let password = "password"
 		static let accessToken = "access_token"
 		static let tokenType = "token_type"
 		static let grantDate = "grantDate"

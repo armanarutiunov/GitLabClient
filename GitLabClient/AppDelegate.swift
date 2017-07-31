@@ -25,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func setupGitLabAccountAvailability() {
 		
 		if let _ = GitLabAccount.loadFromKeychain() {
-//			checkTokenAvailability(for: gitLabAccount)
 			setupInitial(viewController: GLGroupsViewController.init(nibName: "GLGroupsViewController",
 			                                                           bundle: nil))
 		} else {
@@ -33,21 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 			                                                                bundle: nil))
 		}
 	}
-	
-	//MARK: - Authorization Logic
-	
-//	func checkTokenAvailability(for account: GitLabAccount) {
-//		
-//		let expirationDate = account.grantDate.timeIntervalSince1970 + account.expiration
-//		let currentDate = Date().timeIntervalSince1970
-//		
-//		if currentDate < expirationDate {
-//		} else {
-//			let authViewModel = GLAuthorizationViewModel()
-//			authViewModel.requestOAuthToken(with: account.username,
-//			                                and: account.password)
-//		}
-//	}
 	
 	//MARK: - Initial View Controller Setup
 	

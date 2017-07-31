@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GLCommitTableViewCell" id="KGk-i7-Jjw" customClass="GLCommitTableViewCell" customModule="GitLabClient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Commit name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oq4-zn-1fC">
+                        <rect key="frame" x="15" y="10" width="99.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Short ID" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5G-mB-9oj">
+                        <rect key="frame" x="15" y="36" width="52" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Commit author and date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrB-al-idT">
+                        <rect key="frame" x="15" y="61" width="155" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vrB-al-idT" firstAttribute="top" secondItem="G5G-mB-9oj" secondAttribute="bottom" constant="8" id="I3C-Gl-Ucd"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vrB-al-idT" secondAttribute="trailing" constant="15" id="M1K-1F-OiX"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Oq4-zn-1fC" secondAttribute="trailing" constant="15" id="V68-KG-ylV"/>
+                    <constraint firstAttribute="bottom" secondItem="vrB-al-idT" secondAttribute="bottom" constant="11.5" id="W8A-u1-x0W"/>
+                    <constraint firstItem="vrB-al-idT" firstAttribute="leading" secondItem="G5G-mB-9oj" secondAttribute="leading" id="XGS-JO-hG3"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="G5G-mB-9oj" secondAttribute="trailing" constant="15" id="avH-sE-6FP"/>
+                    <constraint firstItem="G5G-mB-9oj" firstAttribute="top" secondItem="Oq4-zn-1fC" secondAttribute="bottom" constant="8" id="hb9-vJ-fE3"/>
+                    <constraint firstItem="Oq4-zn-1fC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="kqr-QX-C9v"/>
+                    <constraint firstItem="G5G-mB-9oj" firstAttribute="leading" secondItem="Oq4-zn-1fC" secondAttribute="leading" id="q36-sI-HRM"/>
+                    <constraint firstItem="Oq4-zn-1fC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="uxJ-W7-nfu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="authorAndDate" destination="vrB-al-idT" id="yuo-UV-6eF"/>
+                <outlet property="commitName" destination="Oq4-zn-1fC" id="cF5-rv-Oho"/>
+                <outlet property="shortId" destination="G5G-mB-9oj" id="6cC-8f-7Cl"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
