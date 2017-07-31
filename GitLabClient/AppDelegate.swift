@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		if let _ = GitLabAccount.loadFromKeychain() {
 //			checkTokenAvailability(for: gitLabAccount)
-			setupInitial(viewController: GLProjectsViewController.init(nibName: "GLProjectsViewController",
+			setupInitial(viewController: GLGroupsViewController.init(nibName: "GLGroupsViewController",
 			                                                           bundle: nil))
 		} else {
 			setupInitial(viewController: GLAuthorizationViewController.init(nibName: "GLAuthorizationViewController",
@@ -55,6 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		window = UIWindow.init(frame: UIScreen.main.bounds)
 		let navController = UINavigationController.init(rootViewController: viewController)
+		navController.isNavigationBarHidden = true
 		window?.rootViewController = navController
 		window?.makeKeyAndVisible()
 	}

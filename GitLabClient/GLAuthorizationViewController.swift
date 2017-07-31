@@ -24,7 +24,6 @@ class GLAuthorizationViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		self.navigationController?.isNavigationBarHidden = true
 		setupHeaderView()
 		setupSignInButton()
 	}
@@ -83,7 +82,7 @@ class GLAuthorizationViewController: UIViewController {
 	}
 	
 	func enterGitLab() {
-		self.navigationController?.pushViewController(GLProjectsViewController.init(nibName: "GLProjectsViewController",
+		self.navigationController?.pushViewController(GLGroupsViewController.init(nibName: "GLGroupsViewController",
 		                                                                            bundle: nil),
 		                                              animated: true)
 	}

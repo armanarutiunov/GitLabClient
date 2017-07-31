@@ -12,6 +12,15 @@
 		0134ACE31F2E00550025112A /* GLProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134ACE11F2E00550025112A /* GLProjectsViewController.swift */; };
 		0134ACE41F2E00550025112A /* GLProjectsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0134ACE21F2E00550025112A /* GLProjectsViewController.xib */; };
 		0134ACE71F2E00F30025112A /* GLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134ACE61F2E00F30025112A /* GLViewController.swift */; };
+		0135C1021F2E885E009F5BCB /* GLGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0135C1011F2E885E009F5BCB /* GLGroup.swift */; };
+		0135C1061F2E9153009F5BCB /* GLGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0135C1041F2E9153009F5BCB /* GLGroupsViewController.swift */; };
+		0135C1071F2E9153009F5BCB /* GLGroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0135C1051F2E9153009F5BCB /* GLGroupsViewController.xib */; };
+		0135C1091F2E9166009F5BCB /* GLGroupsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0135C1081F2E9166009F5BCB /* GLGroupsViewModel.swift */; };
+		0135C10D1F2E9A63009F5BCB /* GLGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0135C10B1F2E9A63009F5BCB /* GLGroupTableViewCell.swift */; };
+		0135C10E1F2E9A63009F5BCB /* GLGroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0135C10C1F2E9A63009F5BCB /* GLGroupTableViewCell.xib */; };
+		0135C1101F2E9B48009F5BCB /* GLGroupHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0135C10F1F2E9B48009F5BCB /* GLGroupHeader.swift */; };
+		0135C1121F2E9B59009F5BCB /* GLGroupHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0135C1111F2E9B59009F5BCB /* GLGroupHeader.xib */; };
+		0135C1161F2ECD72009F5BCB /* GLProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0135C1151F2ECD72009F5BCB /* GLProject.swift */; };
 		0147B56C1F290ED200B5BFDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0147B56B1F290ED200B5BFDF /* AppDelegate.swift */; };
 		0147B5731F290ED200B5BFDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0147B5721F290ED200B5BFDF /* Assets.xcassets */; };
 		0147B5761F290ED200B5BFDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0147B5741F290ED200B5BFDF /* LaunchScreen.storyboard */; };
@@ -41,6 +50,15 @@
 		0134ACE11F2E00550025112A /* GLProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLProjectsViewController.swift; sourceTree = "<group>"; };
 		0134ACE21F2E00550025112A /* GLProjectsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLProjectsViewController.xib; sourceTree = "<group>"; };
 		0134ACE61F2E00F30025112A /* GLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLViewController.swift; sourceTree = "<group>"; };
+		0135C1011F2E885E009F5BCB /* GLGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLGroup.swift; sourceTree = "<group>"; };
+		0135C1041F2E9153009F5BCB /* GLGroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLGroupsViewController.swift; sourceTree = "<group>"; };
+		0135C1051F2E9153009F5BCB /* GLGroupsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLGroupsViewController.xib; sourceTree = "<group>"; };
+		0135C1081F2E9166009F5BCB /* GLGroupsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLGroupsViewModel.swift; sourceTree = "<group>"; };
+		0135C10B1F2E9A63009F5BCB /* GLGroupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLGroupTableViewCell.swift; sourceTree = "<group>"; };
+		0135C10C1F2E9A63009F5BCB /* GLGroupTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLGroupTableViewCell.xib; sourceTree = "<group>"; };
+		0135C10F1F2E9B48009F5BCB /* GLGroupHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLGroupHeader.swift; sourceTree = "<group>"; };
+		0135C1111F2E9B59009F5BCB /* GLGroupHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLGroupHeader.xib; sourceTree = "<group>"; };
+		0135C1151F2ECD72009F5BCB /* GLProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLProject.swift; sourceTree = "<group>"; };
 		0147B5681F290ED200B5BFDF /* GitLabClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitLabClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0147B56B1F290ED200B5BFDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0147B5721F290ED200B5BFDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				0134ACD91F2CF29B0025112A /* Authorization */,
+				0135C1031F2E913D009F5BCB /* Groups */,
 				0134ACE01F2E003D0025112A /* Projects */,
 			);
 			name = Screens;
@@ -123,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				0134ACDD1F2D105B0025112A /* GLGitLabAccount.swift */,
+				0135C1011F2E885E009F5BCB /* GLGroup.swift */,
+				0135C1151F2ECD72009F5BCB /* GLProject.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -144,6 +165,28 @@
 				01A8374E1F2E59D40065B0B2 /* GLActivityIndicator.swift */,
 			);
 			name = "UI Extensions";
+			sourceTree = "<group>";
+		};
+		0135C1031F2E913D009F5BCB /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				0135C1041F2E9153009F5BCB /* GLGroupsViewController.swift */,
+				0135C1081F2E9166009F5BCB /* GLGroupsViewModel.swift */,
+				0135C1051F2E9153009F5BCB /* GLGroupsViewController.xib */,
+				0135C10A1F2E99BD009F5BCB /* TableView Assets */,
+			);
+			name = Groups;
+			sourceTree = "<group>";
+		};
+		0135C10A1F2E99BD009F5BCB /* TableView Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0135C10B1F2E9A63009F5BCB /* GLGroupTableViewCell.swift */,
+				0135C10C1F2E9A63009F5BCB /* GLGroupTableViewCell.xib */,
+				0135C10F1F2E9B48009F5BCB /* GLGroupHeader.swift */,
+				0135C1111F2E9B59009F5BCB /* GLGroupHeader.xib */,
+			);
+			name = "TableView Assets";
 			sourceTree = "<group>";
 		};
 		0147B55F1F290ED200B5BFDF = {
@@ -308,9 +351,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0135C10E1F2E9A63009F5BCB /* GLGroupTableViewCell.xib in Resources */,
+				0135C1071F2E9153009F5BCB /* GLGroupsViewController.xib in Resources */,
 				0147B5761F290ED200B5BFDF /* LaunchScreen.storyboard in Resources */,
 				0134ACE41F2E00550025112A /* GLProjectsViewController.xib in Resources */,
 				0147B5731F290ED200B5BFDF /* Assets.xcassets in Resources */,
+				0135C1121F2E9B59009F5BCB /* GLGroupHeader.xib in Resources */,
 				0147B58E1F29121E00B5BFDF /* GLAuthorizationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,8 +468,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0135C1021F2E885E009F5BCB /* GLGroup.swift in Sources */,
+				0135C1091F2E9166009F5BCB /* GLGroupsViewModel.swift in Sources */,
 				0134ACE31F2E00550025112A /* GLProjectsViewController.swift in Sources */,
+				0135C1061F2E9153009F5BCB /* GLGroupsViewController.swift in Sources */,
 				01A8374F1F2E59D40065B0B2 /* GLActivityIndicator.swift in Sources */,
+				0135C10D1F2E9A63009F5BCB /* GLGroupTableViewCell.swift in Sources */,
 				0147B56C1F290ED200B5BFDF /* AppDelegate.swift in Sources */,
 				0134ACD81F2CAD720025112A /* GLAuthorizationViewModel.swift in Sources */,
 				0134ACE71F2E00F30025112A /* GLViewController.swift in Sources */,
@@ -431,6 +481,8 @@
 				01A8374D1F2E58310065B0B2 /* GLProjectsViewModel.swift in Sources */,
 				01A837521F2E5EDC0065B0B2 /* GLAPIManager.swift in Sources */,
 				0134ACDE1F2D105B0025112A /* GLGitLabAccount.swift in Sources */,
+				0135C1161F2ECD72009F5BCB /* GLProject.swift in Sources */,
+				0135C1101F2E9B48009F5BCB /* GLGroupHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
