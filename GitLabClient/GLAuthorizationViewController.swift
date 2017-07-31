@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GLAuthorizationViewController: UIViewController {
+class GLAuthorizationViewController: UIViewController, UITextFieldDelegate {
 	
 	//MARK: - Properties
 	
@@ -24,6 +24,8 @@ class GLAuthorizationViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
+		setupTapToRemoveKeyboard()
+		setupTextFields()
 		setupHeaderView()
 		setupSignInButton()
 	}
@@ -62,6 +64,17 @@ class GLAuthorizationViewController: UIViewController {
 		                                          object: nil)
 	}
 	
+	func setupTapToRemoveKeyboard() {
+		let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+		view.addGestureRecognizer(tap)
+	}
+	
+	func setupTextFields() {
+		
+		self.usernameTextField.delegate = self
+		self.passwordTextField.delegate = self
+	}
+	
 	func setupHeaderView() {
 		headerView.layer.borderColor = UIColor.lightGray.cgColor
 		headerView.layer.borderWidth = 1
@@ -69,6 +82,13 @@ class GLAuthorizationViewController: UIViewController {
 	
 	func setupSignInButton() {
 		signInButton.layer.cornerRadius = 4
+	}
+	
+	//MARK: - UITextFieldDelegate
+	
+	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+		textField.resignFirstResponder()
+		return true
 	}
 	
 	//MARK: - Actions
@@ -91,6 +111,10 @@ class GLAuthorizationViewController: UIViewController {
 		showAlert(withTitle: "Cannot Sign In",
 		          message: "The user name or password is incorrect",
 		          andActionTitle: "OK")
+	}
+	
+	func dismissKeyboard() {
+		view.endEditing(true)
 	}
 	
 	
