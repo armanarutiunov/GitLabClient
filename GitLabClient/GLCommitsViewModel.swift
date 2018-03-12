@@ -73,7 +73,9 @@ extension GLCommitViewModel {
 				sortedCommits.append([commit])
 			}
 		}
-		print(sortedCommits[0][0].authorName)
+        if sortedCommits.count > 0 {
+            print(sortedCommits[0][0].authorName)
+        }
 	}
 	
 	func headerLabel(forSection section: Int) -> String {

@@ -6,14 +6,9 @@ target 'GitLabClient' do
   use_frameworks!
 
   # Pods for GitLabClient
-pod 'OAuthSwift'
+pod 'OAuthSwift', '~> 1.1.2'
 pod 'Alamofire'
 pod 'Locksmith'
 pod 'AlamofireImage'
-
-  target 'GitLabClientTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
 end

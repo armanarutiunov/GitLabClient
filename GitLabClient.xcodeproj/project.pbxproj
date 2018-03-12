@@ -42,7 +42,6 @@
 		01A8374F1F2E59D40065B0B2 /* GLActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8374E1F2E59D40065B0B2 /* GLActivityIndicator.swift */; };
 		01A837521F2E5EDC0065B0B2 /* GLAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A837511F2E5EDC0065B0B2 /* GLAPIManager.swift */; };
 		3522AC29EB00F5BA2A63BF8A /* Pods_GitLabClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA101D31777A88D6FE2A8B1 /* Pods_GitLabClient.framework */; };
-		B897666ECCFF6D33F1C9C3E0 /* Pods_GitLabClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36DE110B3EE66C0FB9C39CCB /* Pods_GitLabClientTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,8 +94,6 @@
 		01A8374E1F2E59D40065B0B2 /* GLActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLActivityIndicator.swift; sourceTree = "<group>"; };
 		01A837511F2E5EDC0065B0B2 /* GLAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLAPIManager.swift; sourceTree = "<group>"; };
 		36DE110B3EE66C0FB9C39CCB /* Pods_GitLabClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitLabClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DF895D0A83413668ACF2799 /* Pods-GitLabClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitLabClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitLabClientTests/Pods-GitLabClientTests.debug.xcconfig"; sourceTree = "<group>"; };
-		439946DED5626F048510DBC0 /* Pods-GitLabClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitLabClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitLabClientTests/Pods-GitLabClientTests.release.xcconfig"; sourceTree = "<group>"; };
 		ADC25BDA9B6FA49297F7758B /* Pods-GitLabClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitLabClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitLabClient/Pods-GitLabClient.debug.xcconfig"; sourceTree = "<group>"; };
 		CA572D78A5D4577496D5DD5E /* Pods-GitLabClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitLabClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitLabClient/Pods-GitLabClient.release.xcconfig"; sourceTree = "<group>"; };
 		ECA101D31777A88D6FE2A8B1 /* Pods_GitLabClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitLabClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,7 +112,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B897666ECCFF6D33F1C9C3E0 /* Pods_GitLabClientTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,8 +306,6 @@
 			children = (
 				ADC25BDA9B6FA49297F7758B /* Pods-GitLabClient.debug.xcconfig */,
 				CA572D78A5D4577496D5DD5E /* Pods-GitLabClient.release.xcconfig */,
-				3DF895D0A83413668ACF2799 /* Pods-GitLabClientTests.debug.xcconfig */,
-				439946DED5626F048510DBC0 /* Pods-GitLabClientTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -343,12 +337,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0147B5881F290ED200B5BFDF /* Build configuration list for PBXNativeTarget "GitLabClientTests" */;
 			buildPhases = (
-				6974B34DA1F63A3B09978894 /* [CP] Check Pods Manifest.lock */,
 				0147B5781F290ED200B5BFDF /* Sources */,
 				0147B5791F290ED200B5BFDF /* Frameworks */,
 				0147B57A1F290ED200B5BFDF /* Resources */,
-				A9E9D09C276FC1F3AD19E8E5 /* [CP] Embed Pods Frameworks */,
-				A178427E8F0D1A0DD0D135CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -368,7 +359,7 @@
 			attributes = {
 				CLASSPREFIX = GL;
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Arman Arutyunov";
 				TargetAttributes = {
 					0147B5671F290ED200B5BFDF = {
@@ -438,9 +429,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GitLabClient/Pods-GitLabClient-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Locksmith/Locksmith.framework",
+				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Locksmith.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -453,58 +453,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GitLabClient-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6974B34DA1F63A3B09978894 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A178427E8F0D1A0DD0D135CC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitLabClientTests/Pods-GitLabClientTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A9E9D09C276FC1F3AD19E8E5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitLabClientTests/Pods-GitLabClientTests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CEA75A204299FCB85C4DFD82 /* [CP] Copy Pods Resources */ = {
@@ -594,7 +552,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -602,7 +562,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -644,7 +608,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -652,7 +618,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -707,7 +677,6 @@
 		};
 		0147B5891F290ED200B5BFDF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DF895D0A83413668ACF2799 /* Pods-GitLabClientTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -723,7 +692,6 @@
 		};
 		0147B58A1F290ED200B5BFDF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 439946DED5626F048510DBC0 /* Pods-GitLabClientTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
